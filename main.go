@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/l1va/gofins/fins"
+	"github.com/ahmadfarisfs/gofins/fins"
 )
 
 func main() {
@@ -56,7 +56,7 @@ func main() {
 			} else {
 				fmt.Println("Retrying...")
 				time.Sleep(1 * time.Second)
-				try += 1
+				try++
 			}
 		} else {
 			fmt.Println(z)
